@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# file: __init__.py
+# file: molecular_dynamics.py
 
 # This code is part of Saúva.
 # MIT License

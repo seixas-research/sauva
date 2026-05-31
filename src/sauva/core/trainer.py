@@ -104,7 +104,9 @@ class Trainer:
 
     @property
     def name(self) -> str:
-        """Name of the model and output files."""
+        """
+        Name of the model and output files.
+        """
         return self._name
 
     @name.setter
@@ -113,7 +115,9 @@ class Trainer:
 
     @property
     def train_file(self) -> str:
-        """Path to the training XYZ dataset."""
+        """
+        Path to the training XYZ dataset.
+        """
         return self._train_file
 
     @train_file.setter
@@ -124,7 +128,9 @@ class Trainer:
 
     @property
     def valid_file(self) -> str:
-        """Path to the validation XYZ dataset."""
+        """
+        Path to the validation XYZ dataset.
+        """
         return self._valid_file
 
     @valid_file.setter
@@ -135,7 +141,9 @@ class Trainer:
 
     @property
     def max_num_epochs(self) -> int:
-        """Maximum number of training epochs."""
+        """
+        Maximum number of training epochs.
+        """
         return self._max_num_epochs
 
     @max_num_epochs.setter
@@ -147,7 +155,9 @@ class Trainer:
 
     @property
     def restart_latest(self) -> bool:
-        """Whether to resume training from the last checkpoint."""
+        """
+        Whether to resume training from the last checkpoint.
+        """
         return self._restart_latest
 
 
