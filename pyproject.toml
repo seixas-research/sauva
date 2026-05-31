@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "sauva"
-version = "0.0.1"
+dynamic = ["version"]
 authors = [
   { name="Leandro Seixas Rocha", email="leandro.rocha@ilum.cnpem.br" },
 ]
@@ -13,11 +13,15 @@ readme = "README.md"
 license = {file = "LICENSE"} 
 requires-python = ">=3.10"
 dependencies = [
-    'numpy',
+    'numpy>=2.0.0',
     'pandas',
     'ase',
+    'torch',
     'scipy',
-    'matplotlib'
+    'matplotlib',
+    'pytest',
+    'pyyaml',
+    'mace-torch'
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -29,3 +33,7 @@ classifiers = [
 
 [project.urls]
 "Homepage" = "https://github.com/seixas-research/sauva"
+"Documentation" = "https://sauva.readthedocs.io/en/latest/"
+
+[tool.hatch.version]
+path = "src/sauva/version.py"

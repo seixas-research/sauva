@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
-# file: __init__.py
+# file: version.py
 
-# This code is part of Saúva. 
+# This code is part of Saúva.
 # MIT License
 #
 # Copyright (c) 2026 Leandro Seixas Rocha <leandro.rocha@ilum.cnpem.br> 
 
-from .version import __version__
-
-
+__version__ ="26.5.0"
