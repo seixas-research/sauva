@@ -10,7 +10,7 @@ authors = [
 ]
 description = "Sauva"
 readme = "README.md"
-license = {file = "LICENSE"} 
+license = "MIT" 
 requires-python = ">=3.10"
 dependencies = [
     'numpy>=2.0.0',
@@ -34,6 +34,12 @@ classifiers = [
 [project.urls]
 "Homepage" = "https://github.com/seixas-research/sauva"
 "Documentation" = "https://sauva.readthedocs.io/en/latest/"
+
+[tool.hatch.build.targets.wheel]
+core-metadata-version = "2.1"
+
+[tool.hatch.build.targets.sdist]
+core-metadata-version = "2.1"
 
 [tool.hatch.version]
 path = "src/sauva/version.py"
